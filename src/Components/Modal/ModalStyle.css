@@ -1,0 +1,207 @@
+/* ModalStyle.css */
+.modal {
+    position: absolute;
+    width: 530px;
+    height: 660px;
+    border-radius: 0px 0px 10px 10px;
+    background: #C3C3C3;
+    transition: height 0.3s ease, opacity 0.3s ease, transform 0.03s ease; 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+  
+  .modal-title {
+    background-color: #9e1c1c;
+    padding: 13px;
+    cursor: move;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid rgba(161, 161, 161, 0.00);
+    background: #646464;
+    
+    
+  }
+  
+  .close {
+    position: absolute;
+    top: 0.003px;
+    right: 10px;
+    cursor: pointer;
+    color: #C6C6C6;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  }
+  
+  .seta{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 50%;
+    cursor: pointer;
+  }
+
+
+
+  .modal.minimized {
+    height: 20px; 
+    transition: height 0.3s ease;
+    
+  }
+
+  
+  .ConteudoModal.minimized {
+    animation: fadeOut 0.03s ease-in-out, slideUp 0.05s ease-in-out, opacity 0.3s ease, transform 0.03s ease;
+    animation-fill-mode: forwards;
+  }
+  .ConteudoModal.fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px); 
+    }
+  }
+  
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px); 
+    }
+  }
+  
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .ConteudoModal {
+    transition: opacity 0.03s ease-in-out, transform 0.03s ease-in-out, opacity 0.3s ease, transform 0.03s ease;
+   
+  }
+  ::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+  }
+
+/* Para navegadores WebKit (Chrome, Safari) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Cor de fundo do track */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #646464;
+}
+
+
+
+  
+  .tituloModal {
+    text-align: center;
+    color: #646464;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: -5%;
+    
+    
+  }
+
+  .buscarInput {
+    width: 224px;
+    height: 29px;
+    background: #E3E3E3;
+    border: none;
+    outline: none;
+    color: #ABABAB;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    padding-left: 2%;
+    
+  }
+
+  .buscarPosicao {
+    padding-left: 5%;
+    margin-top: -4%;
+    width: 452px;
+    height: 80px;
+
+  }
+ 
+  input[type=checkbox] {
+    position: relative;
+    top: -5px;
+    left: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 16px;
+    height: 16px;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  background: #A4A4A4;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 16%;
+  left: 16%;
+  background: #D9D9D9;
+}
+
+.labelCheckBox{
+  position: relative;
+  color: #757575;
+  padding-left: 4%;
+  font-family: Ubuntu;
+  font-size: 13px;
+  top: -4%;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.areaVeiculos{
+  width: 480px;
+  height: 470px;
+  position: relative;
+  margin-top: -5%;
+  overflow: auto;
+  margin-left: 5%;
+  scrollbar-width:thin;
+  
+}
+

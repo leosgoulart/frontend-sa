@@ -1,0 +1,33 @@
+.veiculoInfos{
+
+    width: 320px;
+    height: 70px;
+    background: #E3E3E3;
+    margin-left: 35px;
+    
+  }
+  
+  
+.NomeVeiculo2{
+    color: #757575;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 380;
+    position: relative;
+    line-height: normal;
+    text-align: left;
+    margin-left: 26%;
+    padding-top: 3%;
+    vertical-align: bottom;
+    line-height: 1;
+}
+
+.ImgVeiculoModal{
+    overflow: hidden;
+    width: 60%;
+    height: auto;
+
+    
+}
+
